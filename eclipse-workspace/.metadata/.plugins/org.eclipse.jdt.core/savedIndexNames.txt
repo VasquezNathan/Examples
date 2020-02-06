@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+/Users/nateboi/eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core
+2444500832.index
+3622984261.index
+723989257.index
+2944664373.index
+4045485351.index
+2560783226.index

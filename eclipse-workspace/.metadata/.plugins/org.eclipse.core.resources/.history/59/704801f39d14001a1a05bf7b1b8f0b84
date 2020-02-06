@@ -1,0 +1,61 @@
+
+public class Student {
+	private String name;
+	private char gender;
+	private Date birthday;
+	private boolean matched = false;
+	private int comScore;
+	private Preference pref;
+	
+	Student(String theName, char theGender, Date theBDay, Preference thePref){
+		name = theName;
+		gender = theGender;
+		birthday = theBDay;
+		pref = thePref;
+		matched = false;
+	}
+	Student(){
+		
+	}
+	public void setMatched() {
+		matched = true;
+	}
+	public String getName() {
+		return name;
+	}
+	
+	public char getGender() {
+		return gender;
+	}
+	
+	public boolean getMatched() {
+		return false;
+	}
+	
+	public Date getBDay() {
+		return birthday;
+	}
+	
+	public Preference getPref() {
+		return pref;
+	}
+	
+	public int compare(Student st){
+		if(gender != st.gender){
+		return 0;
+		}
+		
+		comScore = (40 - pref.compare(st.pref)) + (60-birthDate.compare(st.birthDate)); 
+		
+		if (comScore < 0){
+			return 0; 
+			}
+			else if (comScore > 100){
+			return 100;
+			}
+		
+		return comScore; 
+	}}
+	
+}
+}

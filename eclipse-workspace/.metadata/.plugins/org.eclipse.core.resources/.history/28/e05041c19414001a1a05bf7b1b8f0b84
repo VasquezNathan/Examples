@@ -1,0 +1,40 @@
+
+public class Student {
+	private String name;
+	private char gender;
+	private Date birthday;
+	private boolean matched;
+	
+	private Preference pref;
+	
+	Student(String theName, char theGender, Date theBDay, Preference thePref){
+		name = theName;
+		gender = theGender;
+		birthday = theBDay;
+		pref = thePref;
+	}
+	Student(){
+		
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public char getGender() {
+		return gender;
+	}
+	
+	public boolean getMatched() {
+		return matched;
+	}
+	
+	public Date getBDay() {
+		return birthday;
+	}
+	
+	public Preference getPref() {
+		return pref;
+	}
+	
+}

@@ -1,0 +1,10 @@
+1) 	a.	The return type of the proc method is a two dimensional int array
+	b.	The third line of the proc method is declaring a two dimensional array named arr of type int and assigning it the empty value of null.
+	c. 	we use try in line 4 to handle the FileNotFoundException
+	d. 	lines 6 and 7 read in the dimensions of the array
+	e.	line 8 is filling in the empty array with the correct dimensions
+	f. 	we can use a for loop because we are given the dimensions of the matrix at the beginning. There are no while loops ()()
+	g. 	line 12 will get executed row * column times. 3x3 arrays will make line 12 executer 9 times.
+2)	a.	arr2d.length means how many rows there are in the array. (The number that is in the first set of brackets.
+	b.	arr2d[0].length returns the size of each column (the number that is in the second set of brackets
+	c. 	arr2d[i][j] + "\t" creates the ith row with each column separated by a tab.
