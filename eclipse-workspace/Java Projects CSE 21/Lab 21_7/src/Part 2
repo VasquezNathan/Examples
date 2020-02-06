@@ -1,0 +1,16 @@
+1)You can tell a method is a constructor if it has the same name as the class name 
+2)no
+3)no because the variables are already accessible from inside the class
+4)yes
+5)class variables will be defined as static and they will be the same for every instance, 
+instance variables are going to be unique for each object.
+6) it will have no effect. the only way to write it would be this.name = name;
+7)you can tell which version of the constructor is being called based off of how many parameters
+of what type, and in which order they(the parameters) are in.
+8)the . operator means that a method is going to be called from the class/object
+9) no because they are not in an array
+10) recursion is called at line 214 which gets executed if redo == 1
+11) this refers to the instance variables
+12) The value of numCheese should be three because there are three instances
+of cheese objects created
+13) public void setName(String name) { this.name = name; }
