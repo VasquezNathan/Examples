@@ -24,9 +24,9 @@
 temp = None
 for i in range(10):
     n = int(input("Enter a number: "))
-    if(n % 2 == 0 and n > temp):
+    if((n % 2 != 0 and temp is None) or (n % 2 != 0 and n > temp)):
         temp = n
-if temp != None:
+if temp != None and temp % 2 == 1:
     print(temp)
 else:
     print("no odds")

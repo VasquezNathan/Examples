@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{CSE 15: Discrete Mathematics\\Homework 3}
+\author{Nathan Vasquez}
+\date{March 1, 2020}
+
+\usepackage{enumitem}
+
+\begin{document}
+
+\maketitle
+
+\section*{Knights and Knaves}
+
+\begin{itemize}
+    \item Scenario 1:\\There are two possibilities for $P$ and $Q$ in this scenario. Either $P$ and $Q$ are Knaves, or $P$ is a Knight and $Q$ is a Knave.
+    \item Scenario 2:\\
+    \begin{center}
+    \begin{tabular}{|c|c|c|}
+    \hline
+    $B$ & $A$ & $B \to A$ \\
+    \hline
+    0 & 0 & 1 \\
+    0 & 1 & 1 \\
+    1 & 0 & 0 \\
+    1 & 1 & 1 \\
+    \hline
+    \end{tabular}
+    \end{center}\\
+    $A$ Cannot be a Knight because then his statement would contradict him being a Knight, therefore $A$ has to be a knave, which means that his statement has to be false. The only scenario in which $A$'s statement is false is when $B$ is a Knight and $A$ is a Knave
+
+\end{itemize}
+\section*{Logical Identities}
+\begin{enumerate}
+    \item $\lnot(p \to (q \to p))$ \\
+    $p \land \lnot (q \to p)$\ Implication Law \\
+    $p \land q \land \lnot p$ Implication Law \\
+    $p \land \lnot p \equiv F$\\
+    $F \land q \equiv F$
+    \item $\lnot ((p \land q) \to (p \lor q))$\\
+    $((p \land q) \land  \lnot(q \lor p))$. Implication Law \\
+    $(p \land q) \land (\lnot q \land \lnot p)$ Negation Law\\
+    $(p \land \lnot p) \land (q \land \lnot q)$ Rearrange\\
+    $(p \land \lnot p) \equiv F
+    \\(q \land \lnot q) \equiv F
+    \\ F \land F \equiv F$
+\end{enumerate}
+
+\section{Logical Equivalence}
+\begin{enumerate}
+    \item $p \to (q \to r) \equiv (p \land q) \to r$\\
+    $\lnot p \lor (q \to r) \equiv \lnot(p \land q) \lor r\\ 
+    \lnot p \lor \lnot q \lor r \equiv \lnot p \lor \lnot q \lor r\\$
+    They are equivalent
+    \item $p \to (q \to r) \ne (p \to q) \to r$\\
+    $\lnot p \lor (q \to r) \ne \lnot(p \to q) \lor r$\\
+    $\lnot p \lor \lnot q \lor r \ne p \land \lnot q \lor r$
+\end{enumerate}
+\section{Logical Consequence}
+\begin{enumerate}
+    \item Jimmy is smart\\Smart people are rich\\
+    \line(1,0){100}\\Jimmy is rich\\ \\This is valid because smart people in this case is a subset of rich, and Jimmy is a subset of smart people therefore Jimmy is rich.
+    \item Islands are surrounded by water\\Puerto Rico is surrounded by water\\
+    \line(1,0){100}\\
+    Puerto Rico is an island\\
+    
+    \\ This is Invalid because Puerto Rico because Puerto Rico and Islands have similar characteristics but Puerto Rico is not always a subset of Islands, therefore it is Invalid.
+\end{enumerate}
+
+\end{document}
